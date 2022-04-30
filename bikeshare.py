@@ -27,6 +27,7 @@ def get_filters():
             print("\nInvalid Selection. \nTry again!")
 
 
+
     # TO DO: get user input for month (all, january, february, ... , june)
     month_list = ["january", "february", "march", "april", "may", "june", "all"]
     month = ''
@@ -39,6 +40,7 @@ def get_filters():
             print("\nInvalid Selection.\nTry again!")
 
 
+
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day_list = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "all"]
     day = ''
@@ -49,6 +51,7 @@ def get_filters():
             break
         else:
             print("\nInvalid Selection\nTry again!")
+
 
 
     print('-'*40)
