@@ -11,12 +11,12 @@ Programming for Data Science Nanodegree Program github project.
 Posting project on gthub.
 
 ### Files used
-chicago.csv
-new_york_city.csv
+chicago.csv  
+new_york_city.csv  
 washington.csv
 
 ### Credits
-https://github.com/Aritra96/bikeshare-project/blob/master/bikeshare.py
-https://github.com/sumankumarsubudhi/Udacity-Bikeshare-Project/blob/master/bikeshare.py
+https://github.com/Aritra96/bikeshare-project/blob/master/bikeshare.py  
+https://github.com/sumankumarsubudhi/Udacity-Bikeshare-Project/blob/master/bikeshare.py  
 https://gitlab.com/tomjose1792/BikeShare-Project-Python/-/blob/master/bikeshare.py
 
