@@ -1,6 +1,6 @@
 import time
 import pandas as pd
-import numpy as np
+# import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -24,8 +24,8 @@ def get_filters():
         if city in CITY_DATA.keys():
             break
         else:
-            print("\nInvalid Selection\n")
-            print("Try again!")
+            print("\nInvalid Selection. \nTry again!")
+
 
 
     # TO DO: get user input for month (all, january, february, ... , june)
@@ -37,8 +37,8 @@ def get_filters():
         if month in month_list:
             break
         else:
-            print("\nInvalid Selection.\n")
-            print("Try again!")
+            
+            print("\nInvalid Selection.\nTry again!")
 
 
 
@@ -51,8 +51,7 @@ def get_filters():
         if day in day_list:
             break
         else:
-            print("\nInvalid Selection\n")
-            print("Try again!")
+            print("\nInvalid Selection\nTry again!")
 
 
 
