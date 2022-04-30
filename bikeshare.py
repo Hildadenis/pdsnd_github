@@ -5,7 +5,7 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-
+# Create a function to get city, month and day filters
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -38,7 +38,7 @@ def get_filters():
             break
         else:
             print("\nInvalid Selection.\n")
-            print("Try again!")             
+            print("Try again!")
 
 
 
@@ -72,14 +72,14 @@ def load_data(city, month, day):
     """
     # load data file into a dataframe
     df = pd.read_csv(CITY_DATA[city])
-    
+
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
-    
+
     # extract month and day of week from Start Time to create new columns
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday_name
-    
+
     # filter by month if applicable
     if month != 'all':
         # use the index of the months list to get the corresponding int
@@ -93,12 +93,12 @@ def load_data(city, month, day):
     if day != 'all':
         # filter by day of week to create the new dataframe
         df = df[df['day_of_week'] == day.title()]
-        
-    return df    
+
+    return df
 
 def raw_data(df):
     """View five rows of data per time as long as reponse is yes."""
-    
+
     responses = ["yes", "no"]
     response = ''
     start_loc = 0
@@ -115,14 +115,14 @@ def raw_data(df):
             print(df.iloc[start_loc:start_loc+5])
             start_loc += 5
         response = input("Do you wish to continue? Yes or No? \nInput:")
-        
+
 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
-    
+
 
     # TO DO: display the most common month
     popular_month_index = df['month'].mode()[0]
